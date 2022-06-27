@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    text-align: center;
+    padding: 80px;
+    background-color: darkgray;
+}
+
+.main-div h1 {
+    background-color: whitesmoke;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 34pt;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.main-div .add-item {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.main-div .add-item #task {
+    padding: 9px;
+    width: 230px;
+    border: 2.5px solid rgb(60, 60, 60);
+    border-top: 3.5px solid rgb(60, 60, 60);
+    outline: none;
+}
+
+.main-div .add-item #add-btn {
+    background-color:indigo;
+    color: white;
+    padding: 12px;
+}
+
+.main-div .list-div {
+    display: flex;
+    justify-content: center;
+}
+
+.main-div .list-div ul {
+    list-style-type: none;
+}
+
+.main-div .list-div ul li {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 10px;
+    width: 550px;
+}
+
+.main-div .list-div ul li:nth-child(2n) {
+    background-color:mediumseagreen;
+}
+
+.main-div .list-div ul li:nth-child(2n+1) {
+    background-color: rgba(127, 255, 212, 0.781);
+}
+
+/*checkbox*/
+.main-div .list-div ul li .checkbox {  
+    margin: auto;
+}
+
+/*task*/
+.main-div .list-div ul li span,
+.main-div .list-div ul li .editBox {  
+    font-size: 14pt;
+    width: 80%;
+    height: fit-content;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+
+}
+
+/*edit icon*/
+.main-div .list-div ul li i {  
+    margin: auto;
+    text-align: center;
+}
